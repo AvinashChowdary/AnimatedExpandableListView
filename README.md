@@ -40,12 +40,13 @@ In Activity/Fragment:
 
 2) Usage	
 
+	```
 	private AnimatedExpandableListView mExpandableListView;
 	private ExpandableListAdapter mExpandableListAdapter;
 	private int lastExpandedPosition = -1;
-	
 	```
 	
+	```
 	mExpandableListView = (AnimatedExpandableListView) findViewById(R.id.expandable_lst);
 	mExpandableListAdapter = new ExpandableListAdapter(this, mGroupList, mChildList);
         mExpandableListView.setAdapter(mExpandableListAdapter);
@@ -55,7 +56,6 @@ In Activity/Fragment:
 	```
 
 	```
-
 	@Override
     	public boolean onGroupClick(ExpandableListView parent, View v, int groupPosition, long id) {
         if (mExpandableListView.isGroupExpanded(groupPosition)) {
@@ -68,7 +68,6 @@ In Activity/Fragment:
 	```
 
 	```
-
 	@Override
     	public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
         // handle click based on child position
@@ -77,7 +76,6 @@ In Activity/Fragment:
 	```
 
 	```
-
 	/**
 	* This is done in order to close the previously expanded group
 	* when clicked on a new group
