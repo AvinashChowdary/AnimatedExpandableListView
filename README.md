@@ -4,16 +4,16 @@ This document explains how to use the component
 Classes to be Copied :
 Copy the following classes from component folder
 
-* AnimatedExpandableListView
-* AnimatedExpandableListAdapter
-* DummyView
-* ExpandAnimation
-* GroupInfo
+* `AnimatedExpandableListView`
+* `AnimatedExpandableListAdapter`
+* `DummyView`
+* `ExpandAnimation`
+* `GroupInfo`
 
  Note : Current classes are in the package com.avinash.uihelper, these can either be copied to specified package or
  change them as per requirement.
 
-AnimatedExpandableListView : is used for creating ExpandableListView with Expand and Collapse Animations
+AnimatedExpandableListView : is used for creating `ExpandableListView` with Expand and Collapse Animations
 
 Usage :
 
@@ -90,7 +90,7 @@ In Activity/Fragment:
 
 3) Adapter
 
-	* Extend your custom adapter with "AnimatedExpandableListAdapter"
+	* Extend your custom adapter with `AnimatedExpandableListAdapter`
 	
 	* Implement the methods
 		
