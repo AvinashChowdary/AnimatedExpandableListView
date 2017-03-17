@@ -49,10 +49,10 @@ In Activity/Fragment:
 	```
 	mExpandableListView = (AnimatedExpandableListView) findViewById(R.id.expandable_lst);
 	mExpandableListAdapter = new ExpandableListAdapter(this, mGroupList, mChildList);
-        mExpandableListView.setAdapter(mExpandableListAdapter);
+	mExpandableListView.setAdapter(mExpandableListAdapter);
 	mExpandableListView.setOnGroupClickListener(this);
-        mExpandableListView.setOnChildClickListener(this);
-        mExpandableListView.setOnGroupExpandListener(this);	
+	mExpandableListView.setOnChildClickListener(this);
+	mExpandableListView.setOnGroupExpandListener(this);	
 	```
 
 	```
