@@ -44,16 +44,17 @@ In Activity/Fragment:
 	private ExpandableListAdapter mExpandableListAdapter;
 	private int lastExpandedPosition = -1;
 	
-	//...
+```
 	
 	mExpandableListView = (AnimatedExpandableListView) findViewById(R.id.expandable_lst);
 	mExpandableListAdapter = new ExpandableListAdapter(this, mGroupList, mChildList);
         mExpandableListView.setAdapter(mExpandableListAdapter);
         mExpandableListView.setOnGroupClickListener(this);
         mExpandableListView.setOnChildClickListener(this);
-        mExpandableListView.setOnGroupExpandListener(this);
-	
-	//...
+        mExpandableListView.setOnGroupExpandListener(this);	
+```
+
+```
 
 	@Override
     	public boolean onGroupClick(ExpandableListView parent, View v, int groupPosition, long id) {
@@ -64,12 +65,18 @@ In Activity/Fragment:
         }
         return true;
     	}
+```
+
+```
 
 	@Override
     	public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
         // handle click based on child position
         return false;
     	}
+```
+
+```
 
 	/**
 	* This is done in order to close the previously expanded group
@@ -85,6 +92,7 @@ In Activity/Fragment:
         }
         lastExpandedPosition = groupPosition;
     	}
+```
 
 3) Adapter
 
@@ -92,6 +100,8 @@ In Activity/Fragment:
 	
 	* Implement the methods
 		
+```
+
 		@Override
     		public View getRealChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
         	return null;
@@ -101,6 +111,7 @@ In Activity/Fragment:
 		public int getRealChildrenCount(int groupPosition) {
         	return 0;
 		}
+```
 
 
 
