@@ -64,13 +64,13 @@ In Activity/Fragment:
             mExpandableListView.expandGroupWithAnimation(groupPosition);
         }
         return true;
-    	}
+	}
 	
 	@Override
-    	public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
+	public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
         // handle click based on child position
         return false;
-    	}
+	}
 	
 	/**
 	* This is done in order to close the previously expanded group
@@ -79,13 +79,13 @@ In Activity/Fragment:
 	*@param groupPosition
 	*/
 	@Override
-    	public void onGroupExpand(int groupPosition) {
+	public void onGroupExpand(int groupPosition) {
         if (lastExpandedPosition != -1
                 && groupPosition != lastExpandedPosition) {
             mExpandableListView.collapseGroup(lastExpandedPosition);
         }
         lastExpandedPosition = groupPosition;
-    	}
+	}
 	```
 
 3) Adapter
@@ -98,12 +98,12 @@ In Activity/Fragment:
 
 	@Override
 	public View getRealChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
-       	return null;
+	return null;
 	}
 
     	@Override
 	public int getRealChildrenCount(int groupPosition) {
-       	return 0;
+	return 0;
 	}
 	```
 
