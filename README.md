@@ -50,14 +50,14 @@ In Activity/Fragment:
 	mExpandableListView = (AnimatedExpandableListView) findViewById(R.id.expandable_lst);
 	mExpandableListAdapter = new ExpandableListAdapter(this, mGroupList, mChildList);
         mExpandableListView.setAdapter(mExpandableListAdapter);
-        mExpandableListView.setOnGroupClickListener(this);
+	mExpandableListView.setOnGroupClickListener(this);
         mExpandableListView.setOnChildClickListener(this);
         mExpandableListView.setOnGroupExpandListener(this);	
 	```
 
 	```
 	@Override
-    	public boolean onGroupClick(ExpandableListView parent, View v, int groupPosition, long id) {
+	public boolean onGroupClick(ExpandableListView parent, View v, int groupPosition, long id) {
         if (mExpandableListView.isGroupExpanded(groupPosition)) {
             mExpandableListView.collapseGroupWithAnimation(groupPosition);
         } else {
@@ -65,17 +65,13 @@ In Activity/Fragment:
         }
         return true;
     	}
-	```
-
-	```
+	
 	@Override
     	public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
         // handle click based on child position
         return false;
     	}
-	```
-
-	```
+	
 	/**
 	* This is done in order to close the previously expanded group
 	* when clicked on a new group
@@ -101,7 +97,7 @@ In Activity/Fragment:
 	```
 
 	@Override
-    	public View getRealChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
+	public View getRealChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
        	return null;
 	}
 
