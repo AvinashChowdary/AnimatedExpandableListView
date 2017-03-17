@@ -102,15 +102,15 @@ In Activity/Fragment:
 		
 ```
 
-		@Override
-    		public View getRealChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
-        	return null;
-		}
+	@Override
+    	public View getRealChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
+       	return null;
+	}
 
-    		@Override
-		public int getRealChildrenCount(int groupPosition) {
-        	return 0;
-		}
+    	@Override
+	public int getRealChildrenCount(int groupPosition) {
+       	return 0;
+	}
 ```
 
 
