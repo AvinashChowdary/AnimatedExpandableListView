@@ -4,11 +4,11 @@ This document explains how to use the component
 Classes to be Copied :
 Copy the following classes from component folder
 
- *      AnimatedExpandableListView
- *	AnimatedExpandableListAdapter
- *	DummyView
- *	ExpandAnimation
- *	GroupInfo
+* AnimatedExpandableListView
+* AnimatedExpandableListAdapter
+* DummyView
+* ExpandAnimation
+* GroupInfo
 
  Note : Current classes are in the package com.avinash.uihelper, these can either be copied to specified package or
  change them as per requirement.
