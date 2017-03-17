@@ -34,9 +34,9 @@ In Activity/Fragment:
 
 1) Make the Activity / Fragment implement 
 	
-	* ExpandableListView.OnGroupClickListener
-	* ExpandableListView.OnChildClickListener
-	* ExpandableListView.OnGroupExpandListener
+	* `ExpandableListView.OnGroupClickListener`
+	* `ExpandableListView.OnChildClickListener`
+	* `ExpandableListView.OnGroupExpandListener`
 
 2) Usage	
 
@@ -95,7 +95,6 @@ In Activity/Fragment:
 	* Implement the methods
 		
 	```
-
 	@Override
 	public View getRealChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
 	return null;
