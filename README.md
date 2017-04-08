@@ -40,13 +40,13 @@ In Activity/Fragment:
 
 2) Usage	
 
-	```
+	```java
 	private AnimatedExpandableListView mExpandableListView;
 	private ExpandableListAdapter mExpandableListAdapter;
 	private int lastExpandedPosition = -1;
 	```
 	
-	```
+	```java
 	mExpandableListView = (AnimatedExpandableListView) findViewById(R.id.expandable_lst);
 	mExpandableListAdapter = new ExpandableListAdapter(this, mGroupList, mChildList);
 	mExpandableListView.setAdapter(mExpandableListAdapter);
@@ -55,7 +55,7 @@ In Activity/Fragment:
 	mExpandableListView.setOnGroupExpandListener(this);	
 	```
 
-	```
+	```java
 	@Override
 	public boolean onGroupClick(ExpandableListView parent, View v, int groupPosition, long id) {
         if (mExpandableListView.isGroupExpanded(groupPosition)) {
@@ -94,7 +94,7 @@ In Activity/Fragment:
 	
 	* Implement the methods
 		
-	```
+	```java
 	@Override
 	public View getRealChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
 	return null;
