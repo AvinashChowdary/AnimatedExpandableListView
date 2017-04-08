@@ -19,17 +19,17 @@ Usage :
 
 In Layout:
 ```xml
-	<com.avinash.uihelper.AnimatedExpandableListView
-                android:id="@+id/expandable_lst"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@android:color/white"
-                android:choiceMode="singleChoice"
-                android:divider="@android:color/transparent"
-                android:groupIndicator="@null"
-                android:scrollbars="none"
-                android:textColor="@android:color/black" />
-		```
+<com.avinash.uihelper.AnimatedExpandableListView
+        android:id="@+id/expandable_lst"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:groupIndicator="@null"
+        android:scrollbars="none"
+        android:textColor="@android:color/black" />
+```
 
 In Activity/Fragment:
 
