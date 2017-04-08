@@ -18,7 +18,7 @@ AnimatedExpandableListView : is used for creating `ExpandableListView` with Expa
 Usage :
 
 In Layout:
-
+```xml
 	<com.avinash.uihelper.AnimatedExpandableListView
                 android:id="@+id/expandable_lst"
                 android:layout_width="match_parent"
@@ -29,6 +29,7 @@ In Layout:
                 android:groupIndicator="@null"
                 android:scrollbars="none"
                 android:textColor="@android:color/black" />
+		```
 
 In Activity/Fragment:
 
